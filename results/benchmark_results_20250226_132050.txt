@@ -1,0 +1,276 @@
+==================================================
+          LLM Benchmark Report
+          Generated on: 2025-02-26 13:20:50
+==================================================
+
+--- Benchmark Parameters Summary ---
+
++-------------+---------------------+--------------------------------------------------------------------------------+------------------------+------------------------+
+| Benchmark   |   Number of Servers | Models                                                                         |   Number of Iterations | LLM Query              |
++=============+=====================+================================================================================+========================+========================+
+| Benchmark 1 |                   2 | CustomMLX: mlx-community/Llama-3.2-1B-Instruct-4bit, CustomOllama: llama3.2:1b |                      1 | Write a 200-word story |
++-------------+---------------------+--------------------------------------------------------------------------------+------------------------+------------------------+
+| Benchmark 2 |                   2 | Common Model: llama 3.2 1B Q4                                                  |                      2 | Write a 200-word story |
++-------------+---------------------+--------------------------------------------------------------------------------+------------------------+------------------------+
+
+--- Servers and Models Details ---
+
++-------------+----------------+---------------------------+--------------------+-----------------+--------------+----------------+------------------------------------------+
+| Benchmark   | Server Label   | Base URL                  | Model Short Name   |   Model Version | Model Size   | Quantization   | Full Model Name                          |
++=============+================+===========================+====================+=================+==============+================+==========================================+
+| Benchmark 1 | CustomMLX      | http://localhost:11435/v1 | llama              |             3.2 | 1B           | Q4             | mlx-community/Llama-3.2-1B-Instruct-4bit |
++-------------+----------------+---------------------------+--------------------+-----------------+--------------+----------------+------------------------------------------+
+| Benchmark 1 | CustomOllama   | http://localhost:11434/v1 | llama              |             3.2 | 1B           | Q4             | llama3.2:1b                              |
++-------------+----------------+---------------------------+--------------------+-----------------+--------------+----------------+------------------------------------------+
+| Benchmark 2 | CustomMLX      | http://localhost:11435/v1 | llama              |             3.2 | 1B           | Q4             | mlx-community/Llama-3.2-1B-Instruct-4bit |
++-------------+----------------+---------------------------+--------------------+-----------------+--------------+----------------+------------------------------------------+
+| Benchmark 2 | CustomOllama   | http://localhost:11434/v1 | llama              |             3.2 | 1B           | Q4             | llama3.2:1b                              |
++-------------+----------------+---------------------------+--------------------+-----------------+--------------+----------------+------------------------------------------+
+
+--- Detailed Benchmark Results ---
+
+===== Benchmark 1 =====
+
+Server: CustomMLX
+--------------------------------------------------
++------------------+------------------------------------------+
+| Parameter        | Value                                    |
++==================+==========================================+
+| Label            | CustomMLX                                |
++------------------+------------------------------------------+
+| Base URL         | http://localhost:11435/v1                |
++------------------+------------------------------------------+
+| Model Short Name | llama                                    |
++------------------+------------------------------------------+
+| Model Version    | 3.2                                      |
++------------------+------------------------------------------+
+| Model Size       | 1B                                       |
++------------------+------------------------------------------+
+| Quantization     | Q4                                       |
++------------------+------------------------------------------+
+| Full Model Name  | mlx-community/Llama-3.2-1B-Instruct-4bit |
++------------------+------------------------------------------+
+
+Pass Details:
+Pass 1 Output:
+```
+The old mansion had been abandoned for decades, its grandeur and beauty slowly being consumed by the passing of time. The once-lush gardens were overgrown with weeds, the sound of crickets and the rustle of leaves the only signs of life.
+
+A young couple, Emily and Jack, had always been drawn to the mansion's mysterious allure. They had heard the whispers of the previous owners, of a family torn apart by tragedy. The couple decided to take a chance and explore the mansion, hoping to uncover its secrets.
+
+As they stepped inside, a chill ran down their spines. The air was thick with dust, and cobwebs hung from the chandeliers. Emily, a history buff, began to explore the rooms, her eyes scanning the walls for any sign of the past.
+
+Jack, a photographer, snapped pictures of the intricate woodwork and faded portraits. As they delved deeper into the mansion, they stumbled upon a hidden room, tucked away behind a bookshelf. Inside, they found a journal belonging to the family's daughter, who had died under mysterious circumstances. The journal revealed a dark family secret, one that had been hidden for decades.
+```
+
++--------+------------------+------------+-----------------------+----------------+------------+
+|   Pass |   Total Time (s) |   TTFT (s) |   Generation Time (s) |   Total Tokens |   Tokens/s |
++========+==================+============+=======================+================+============+
+|      1 |             1.23 |       0.58 |                  0.66 |            190 |      289.2 |
++--------+------------------+------------+-----------------------+----------------+------------+
+
+Server: CustomOllama
+--------------------------------------------------
++------------------+---------------------------+
+| Parameter        | Value                     |
++==================+===========================+
+| Label            | CustomOllama              |
++------------------+---------------------------+
+| Base URL         | http://localhost:11434/v1 |
++------------------+---------------------------+
+| Model Short Name | llama                     |
++------------------+---------------------------+
+| Model Version    | 3.2                       |
++------------------+---------------------------+
+| Model Size       | 1B                        |
++------------------+---------------------------+
+| Quantization     | Q4                        |
++------------------+---------------------------+
+| Full Model Name  | llama3.2:1b               |
++------------------+---------------------------+
+
+Pass Details:
+Pass 1 Output:
+```
+As the sun set over the small town of Willow Creek, a young girl named Emma settled into her favorite spot on the porch. She loved watching the stars twinkle to life in the night sky, and today was no exception. Her grandfather had taught her how to identify constellations when she was just a little girl, and now she felt a sense of pride knowing that he was still out there, watching over her.
+
+As she gazed up at the stars, Emma's thoughts turned to all the places that lay beyond the horizon. She longed for adventure, for the thrill of exploring new lands and meeting new people. But most of all, she wanted to hold onto the sense of wonder that seemed to emanate from the stars themselves.
+
+Emma felt a twinkle in her own eye as she thought of the adventures she would have one day. She might travel to distant lands, or discover hidden treasures on some remote island. The possibilities were endless, and for now, all she could do was sit here with the stars and let their magic wash over her.
+```
+
++--------+------------------+------------+-----------------------+----------------+------------+
+|   Pass |   Total Time (s) |   TTFT (s) |   Generation Time (s) |   Total Tokens |   Tokens/s |
++========+==================+============+=======================+================+============+
+|      1 |             2.45 |       1.23 |                  1.22 |            187 |     153.49 |
++--------+------------------+------------+-----------------------+----------------+------------+
+
+===== Benchmark 2 =====
+
+Server: CustomMLX
+--------------------------------------------------
++------------------+------------------------------------------+
+| Parameter        | Value                                    |
++==================+==========================================+
+| Label            | CustomMLX                                |
++------------------+------------------------------------------+
+| Base URL         | http://localhost:11435/v1                |
++------------------+------------------------------------------+
+| Model Short Name | llama                                    |
++------------------+------------------------------------------+
+| Model Version    | 3.2                                      |
++------------------+------------------------------------------+
+| Model Size       | 1B                                       |
++------------------+------------------------------------------+
+| Quantization     | Q4                                       |
++------------------+------------------------------------------+
+| Full Model Name  | mlx-community/Llama-3.2-1B-Instruct-4bit |
++------------------+------------------------------------------+
+
+Pass Details:
+Pass 1 Output:
+```
+Artificial intelligence (AI) has made tremendous progress in recent years, transforming various aspects of life. Here's a summary of AI advancements:
+
+**Machine Learning (ML)**: ML enables machines to learn from data, making them more intelligent and adaptable. This technology has been applied in areas like image recognition, natural language processing, and predictive analytics.
+
+**Deep Learning (DL)**: DL is a subset of ML that uses neural networks to analyze data. DL has been used in applications like speech recognition, self-driving cars, and medical diagnosis.
+
+**Natural Language Processing (NLP)**: NLP enables computers to understand and generate human language. This technology has been applied in chatbots, virtual assistants, and text analysis.
+
+**Computer Vision**: Computer vision uses AI to interpret and understand visual data from images and videos. This technology has been used in applications like self-driving cars, facial recognition, and medical imaging.
+
+**Robotics and Automation**: AI has enabled the development of intelligent robots that can perform tasks autonomously. This technology has been applied in areas like manufacturing, logistics, and healthcare.
+
+**Edge AI**: Edge AI refers to the processing of AI models at the edge, reducing latency and improving real-time performance. This technology has been applied in applications like smart cities, IoT devices, and autonomous vehicles.
+
+**Quantum AI**: Quantum AI is a new frontier in AI research, leveraging the power of quantum computing to solve complex problems. This technology has the potential to revolutionize fields like medicine, finance, and climate modeling.
+
+**Explainable AI (XAI)**: XAI is a technique that helps explain the decisions made by AI models. This technology has the potential to improve the transparency and trustworthiness of AI systems.
+
+**AI-Powered Healthcare**: AI has been applied in healthcare to improve diagnosis, treatment, and patient outcomes. This technology has the potential to revolutionize healthcare, from personalized medicine to telemedicine.
+
+The advancements in AI have far-reaching implications, from improving our daily lives to transforming industries. As AI continues to evolve, we can expect to see even more innovative applications and breakthroughs in the years to come.
+```
+
+Pass 2 Output:
+```
+Artificial intelligence (AI) has made tremendous progress in recent years, transforming various aspects of life. Here's a summary of AI advancements:
+
+**Machine Learning (ML)**: ML enables machines to learn from data, making them more intelligent and adaptable. This technology has been applied in areas like image recognition, natural language processing, and predictive analytics.
+
+**Deep Learning (DL)**: DL is a subset of ML that uses neural networks to analyze data. DL has been used in applications like speech recognition, self-driving cars, and medical diagnosis.
+
+**Natural Language Processing (NLP)**: NLP enables computers to understand and generate human language. This technology has been applied in chatbots, virtual assistants, and text analysis.
+
+**Computer Vision**: Computer vision uses AI to interpret and understand visual data from images and videos. This technology has been used in applications like self-driving cars, facial recognition, and medical imaging.
+
+**Robotics and Automation**: AI has enabled the development of intelligent robots that can perform tasks autonomously. This technology has been applied in areas like manufacturing, logistics, and healthcare.
+
+**Edge AI**: Edge AI refers to the processing of AI models at the edge, reducing latency and improving real-time performance. This technology has been applied in applications like smart cities, IoT devices, and autonomous vehicles.
+
+**Quantum AI**: Quantum AI is a new frontier in AI research, leveraging the power of quantum computing to solve complex problems. This technology has the potential to revolutionize fields like medicine, finance, and climate modeling.
+
+**Explainable AI (XAI)**: XAI is a technique that helps explain the decisions made by AI models. This technology has the potential to improve the transparency and trustworthiness of AI systems.
+
+**AI-Powered Healthcare**: AI has been applied in healthcare to improve diagnosis, treatment, and patient outcomes. This technology has the potential to revolutionize healthcare, from personalized medicine to telemedicine.
+
+The advancements in AI have far-reaching implications, from improving our daily lives to transforming industries. As AI continues to evolve, we can expect to see even more innovative applications and breakthroughs in the years to come.
+```
+
++--------+------------------+------------+-----------------------+----------------+------------+
+|   Pass |   Total Time (s) |   TTFT (s) |   Generation Time (s) |   Total Tokens |   Tokens/s |
++========+==================+============+=======================+================+============+
+|      1 |             1.22 |       0.06 |                  1.16 |            331 |     284.16 |
++--------+------------------+------------+-----------------------+----------------+------------+
+|      2 |             1.2  |       0.04 |                  1.16 |            331 |     284.82 |
++--------+------------------+------------+-----------------------+----------------+------------+
+
+Server: CustomOllama
+--------------------------------------------------
++------------------+---------------------------+
+| Parameter        | Value                     |
++==================+===========================+
+| Label            | CustomOllama              |
++------------------+---------------------------+
+| Base URL         | http://localhost:11434/v1 |
++------------------+---------------------------+
+| Model Short Name | llama                     |
++------------------+---------------------------+
+| Model Version    | 3.2                       |
++------------------+---------------------------+
+| Model Size       | 1B                        |
++------------------+---------------------------+
+| Quantization     | Q4                        |
++------------------+---------------------------+
+| Full Model Name  | llama3.2:1b               |
++------------------+---------------------------+
+
+Pass Details:
+Pass 1 Output:
+```
+Artificial intelligence (AI) has made tremendous progress in recent years, driving significant advancements in various fields. Some key areas of improvement include:
+
+1. **Natural Language Processing (NLP)**: AI systems can now understand and generate human-like language, enabling applications such as virtual assistants, chatbots, and text-to-speech technologies.
+2. **Machine Learning (ML)**: ML algorithms have become increasingly robust, allowing AI to learn from data, identify patterns, and make predictions or decisions without human intervention.
+3. **Deep Learning**: A subfield of ML, deep learning has enabled the development of complex neural networks that can learn from vast amounts of data, leading to breakthroughs in computer vision, speech recognition, and natural language processing.
+4. **Computer Vision**: AI-powered computers can now interpret and understand visual data from images and videos, enabling applications like object detection, facial recognition, and autonomous vehicles.
+5. **Robotics and Artificial Intelligence Integration**: Recent advancements have merged robotics and AI, allowing robots to learn from their environment and adapt to new situations, making them more autonomous and flexible.
+
+Advances in AI include:
+
+* Increased adoption of AI in industries such as healthcare, finance, and transportation
+* Development of multimodal interfaces that combine text, images, and speech
+* Improved AI-powered predictive analytics and decision-making
+* Growing availability of affordable AI hardware and software
+
+However, significant challenges remain, including:
+
+* Handling complex, context-dependent problems like decision-making and creative reasoning
+* Addressing concerns around bias, fairness, and transparency in AI systems
+* Dealing with the increasing need for human-AI collaboration to mitigate potential risks
+```
+
+Pass 2 Output:
+```
+Artificial intelligence (AI) has undergone significant advancements over the years, transforming various aspects of our lives. Here are some key developments:
+
+1. **Machine Learning**: Machine learning algorithms enable machines to learn from data and improve their performance without being explicitly programmed. This field has led to applications in image recognition, speech recognition, and natural language processing.
+
+2. **Deep Learning**: Deep learning techniques, such as convolutional neural networks (CNNs) and recurrent neural networks (RNNs), have enabled significant improvements in image and speech recognition, translation, and other tasks.
+
+3. **Natural Language Processing (NLP)**: NLP has become a crucial component of AI, enabling systems to understand, generate, and process human language. AI-powered chatbots, virtual assistants, and text analysis tools are now common.
+
+4. **Rapid Progress in Computer Vision**: Advances in computer vision have led to breakthroughs in object detection, facial recognition, and image segmentation. These advancements have numerous applications in industries like autonomous vehicles, healthcare, and finance.
+
+5. **Increased Accessibility**: AI-powered tools have become more accessible, allowing non-experts to interact with AI systems using simple interfaces. This has democratized the development of AI capabilities and increased its adoption across various sectors.
+
+6. **Energy Efficiency and Real-Time Processing**: Advances in computing power and specialized hardware (e.g., GPUs) have enabled real-time processing and improved energy efficiency, facilitating widespread adoption of AI applications.
+
+7. **Explainable AI**: As AI systems become more complex, developers are working to improve transparency and Explainability in AI models. This involves techniques like feature attribution, model interpretability, and explainability frameworks.
+
+The rapid progress in AI has led to significant economic, social, and environmental benefits. However, concerns surround the job displacement, biases, and potential risks associated with expanded AI capabilities. Ongoing research focuses on addressing these challenges and ensuring that AI is developed responsibly.
+```
+
++--------+------------------+------------+-----------------------+----------------+------------+
+|   Pass |   Total Time (s) |   TTFT (s) |   Generation Time (s) |   Total Tokens |   Tokens/s |
++========+==================+============+=======================+================+============+
+|      1 |             2.11 |       0.08 |                  2.03 |            249 |     122.81 |
++--------+------------------+------------+-----------------------+----------------+------------+
+|      2 |             2.35 |       0.02 |                  2.33 |            291 |     125.09 |
++--------+------------------+------------+-----------------------+----------------+------------+
+
+--- Global Benchmark Results Summary ---
+
++-------------+--------------+------------------------------------------+--------------+-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+
+| Benchmark   | Server       | Full Model Name                          | Model Name   |   Version | Size   | Quantization   |   Min Total (s) |   Max Total (s) |   Avg Total (s) |   Std Total (s) |   Min TTFT (s) |   Max TTFT (s) |   Avg TTFT (s) |   Std TTFT (s) |   Min Gen (s) |   Max Gen (s) |   Avg Gen (s) |   Std Gen (s) |   Min Tokens/s |   Max Tokens/s |   Avg Tokens/s |   Std Tokens/s |
++=============+==============+==========================================+==============+===========+========+================+=================+=================+=================+=================+================+================+================+================+===============+===============+===============+===============+================+================+================+================+
+| Benchmark 1 | CustomMLX    | mlx-community/Llama-3.2-1B-Instruct-4bit | llama        |       3.2 | 1B     | Q4             |            1.23 |            1.23 |            1.23 |            0    |           0.58 |           0.58 |           0.58 |           0    |          0.66 |          0.66 |          0.66 |          0    |         289.2  |         289.2  |         289.2  |           0    |
++-------------+--------------+------------------------------------------+--------------+-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+
+| Benchmark 1 | CustomOllama | llama3.2:1b                              | llama        |       3.2 | 1B     | Q4             |            2.45 |            2.45 |            2.45 |            0    |           1.23 |           1.23 |           1.23 |           0    |          1.22 |          1.22 |          1.22 |          0    |         153.49 |         153.49 |         153.49 |           0    |
++-------------+--------------+------------------------------------------+--------------+-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+
+| Benchmark 2 | CustomMLX    | mlx-community/Llama-3.2-1B-Instruct-4bit | llama        |       3.2 | 1B     | Q4             |            1.2  |            1.22 |            1.21 |            0.01 |           0.04 |           0.06 |           0.05 |           0.01 |          1.16 |          1.16 |          1.16 |          0    |         284.16 |         284.82 |         284.49 |           0.47 |
++-------------+--------------+------------------------------------------+--------------+-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+
+| Benchmark 2 | CustomOllama | llama3.2:1b                              | llama        |       3.2 | 1B     | Q4             |            2.11 |            2.35 |            2.23 |            0.17 |           0.02 |           0.08 |           0.05 |           0.04 |          2.03 |          2.33 |          2.18 |          0.21 |         122.81 |         125.09 |         123.95 |           1.62 |
++-------------+--------------+------------------------------------------+--------------+-----------+--------+----------------+-----------------+-----------------+-----------------+-----------------+----------------+----------------+----------------+----------------+---------------+---------------+---------------+---------------+----------------+----------------+----------------+----------------+
+==================================================

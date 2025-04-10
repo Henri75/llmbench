@@ -1,0 +1,5 @@
+# Ignore all .txt files in the results directory
+results/*.txt
+
+# Alternative: ignore the entire results directory
+# results/
